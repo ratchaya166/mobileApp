@@ -1,34 +1,80 @@
-<ons-page ons-show="updateToolbar('Search'); !isAndroid() && focusInput('ios')" ng-infinite-scroll="loadMore">
-  <ons-if class="search-bar" platform="ios other">
-    <form ng-submit="search(true); blurInput('ios')">
-      <ons-input type="search" class="search-input" input-id="ios-search-input" placeholder="Search for videos in YouTube" ng-model="query"></ons-input>
-    </form>
-  </ons-if>
+<ons-page id="Tab2">
+  <ons-page>
 
-  <div class="content">
-
-    <ons-list>
-      <ons-list-item tappable ng-repeat="video in results track by $index" ng-click="modal.show(); launch(video, true)">
-        <div class="left">
-          <img class="thumbnail" ng-src="{{ video.thumbnail }}">
-        </div>
-        <div class="center">
-          <div class="title">
-            {{ video.title }}
-          </div>
-          <div class="user">
-            <ons-icon icon="fa-user"></ons-icon><span style="font-size: 12px"> {{ video.author ? video.author : "Anonymous" }}</span>
-          </div>
-          <div class="desc">
-            {{ video.description }}
-          </div>
-        </div>
-      </ons-list-item>
-    </ons-list>
-
-    <p class="after-list">
-      <span ng-show="results.length === 0 && !loading">{{ labelSearch }}</span>
-      <span ng-show="loading"><ons-icon icon="fa-spinner" size="26px" spin></ons-icon></span>
+    <p style="text-align: center; margin-top: 20px;">
+      <ons-search-input placeholder="Search" onchange="ons.notification.alert('Searched for: ' + this.value)">
+      </ons-search-input>
     </p>
-  </div>
+
+
+    <ons-row>
+      <ons-col width="200px">
+        <img src="./img/movie2.jpg" width="80%" />
+      </ons-col>
+
+      <ons-col>
+        <div class="title-movie">Aladdin</div>
+        <div class="text-movie">
+          Disney's Aladdin story focuses on Aladdin. A hospitable street
+          thief After he had the opportunity to meet Princess Jasmine by
+          accident in the market in the middle of the city. But Aladdin's
+          every move was watched by the Sultan's minister...
+        </div>
+        <div class="title-movie">Rating</div>
+        <div class="icon-star">
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star-half"></ons-icon>
+        </div>
+      </ons-col>
+    </ons-row>
+    <ons-row>
+      <ons-col width="200px">
+        <img src="./img/movie3.jpg" width="80%" />
+      </ons-col>
+
+      <ons-col>
+        <div class="title-movie">The house clock in its walls</div>
+        <div class="text-movie">
+          The new, gorgeous Amblin Jana Home took place in the place we'd
+          expect to meet Jack Black and Kate Blanchett, the owners of 2
+          Aurors, in a house with a clock in its Wall. From Amblin
+          Entertainment Mint, this wondrous...
+        </div>
+        <div class="title-movie">Rating</div>
+        <div class="icon-star">
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star-half"></ons-icon>
+        </div>
+      </ons-col>
+    </ons-row>
+    <ons-row>
+      <ons-col width="200px">
+        <img src="./img/movie4.jpg" width="80%" />
+      </ons-col>
+
+      <ons-col>
+        <div class="title-movie">Nutcracker</div>
+        <div class="text-movie">
+          All Clara (Mackenzie Foy) needs is a key - one unique key. To
+          unlock the box containing priceless gifts From the departed
+          mother The golden thread was given to her at the Godfather's
+          annual holiday party. Drossel Meyer...
+        </div>
+        <div class="title-movie">Rating</div>
+        <div class="icon-star">
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star"></ons-icon>
+          <ons-icon size="25px" icon="md-star-half"></ons-icon>
+        </div>
+      </ons-col>
+    </ons-row>
+  </ons-page>
 </ons-page>
