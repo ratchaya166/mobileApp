@@ -18,51 +18,130 @@
       <ons-toolbar>
         <div class="center">Tab 1</div>
       </ons-toolbar>
-    
+
       <ons-tabbar swipeable position="auto">
-        <ons-tab page="tab1.html" label="Tab 1" icon="md-settings" active-icon="md-face">
+        <ons-tab
+          page="tab1.html"
+          label="Home"
+          icon="md-settings"
+          active-icon="md-face"
+        >
         </ons-tab>
-        <ons-tab page="tab2.html" label="Tab 2" icon="md-settings" active-icon="md-face">
+        <ons-tab
+          page="tab2.html"
+          label="Search"
+          icon="md-settings"
+          active-icon="md-face"
+        >
         </ons-tab>
-        <ons-tab page="tab3.html" label="Tab 3" icon="md-settings" active-icon="md-face">
+        <ons-tab
+          page="tab3.html"
+          label="Favorite"
+          icon="md-settings"
+          active-icon="md-face"
+        >
         </ons-tab>
-        <ons-tab page="tab4.html" label="Tab 4" icon="md-settings" active-icon="md-face">
+        <ons-tab
+          page="tab4.html"
+          label="Profile"
+          icon="md-settings"
+          active-icon="md-face"
+        >
         </ons-tab>
       </ons-tabbar>
     </ons-page>
-    
+
     <template id="tab1.html">
       <ons-page id="Tab1">
-        <p style="text-align: center;">
-          This is the first page.
-          <img src="./img/amp.jpg" width="300" height="300">
+        <p style="text-align: center">
+          <img src="./img/movie1.jpg" width="300" height="400" />
         </p>
+        <p style="text-align: left">Top 10 of August</p>
       </ons-page>
     </template>
-    
+
     <template id="tab2.html">
       <ons-page id="Tab2">
-        <p style="text-align: center;">
-          This is the second page.
-        </p>
+        <ons-page>
+          <p style="text-align: center; margin-top: 10px">
+            <ons-search-input
+              placeholder="Search"
+              onchange="ons.notification.alert('Searched for: ' + this.value)"
+            ></ons-search-input>
+          </p>
+
+          <ons-row>
+            <ons-col width="200px">
+              <img src="./img/movie2.jpg" width="80%"  />
+            </ons-col>
+
+            <ons-col>
+              <div class="title-movie">Aladdin</div>
+              <div class="text-movie">
+                The trend of a young boy imitates Aladdin, he is tempted by the
+                Shafar wizard to take Chanyeo in the central lion cave. Aladdin
+                made the first wish for him to be ...
+              </div>
+              <div class="title-movie">Rating</div>
+              <div class="icon-star">
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star-half"></ons-icon>
+              </div>
+            </ons-col>
+          </ons-row>
+          <ons-row>
+            <ons-col width="200px">
+              <img src="./img/movie3.jpg" width="80%"  />
+            </ons-col>
+
+            <ons-col>
+              <div class="title-movie">hdyuyufiifyu</div>
+              <div class="text-movie">ghdtyuiriry</div>
+              <div class="title-movie">Rating</div>
+              <div class="icon-star">
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star-half"></ons-icon>
+              </div>
+            </ons-col>
+          </ons-row>
+          <ons-row>
+            <ons-col width="200px">
+              <img src="./img/movie4.jpg" width="80%"  />
+            </ons-col>
+
+            <ons-col>
+              <div class="title-movie">hdyuyufiifyu</div>
+              <div class="text-movie">ghdtyuiriry</div>
+              <div class="title-movie">Rating</div>
+              <div class="icon-star">
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star"></ons-icon>
+                <ons-icon size="25px" icon="md-star-half"></ons-icon>
+              </div>
+            </ons-col>
+          </ons-row>
+        </ons-page>
       </ons-page>
     </template>
 
     <template id="tab3.html">
       <ons-page id="Tab3">
-        <p style="text-align: center;">
-          This is the third page.
-        </p>
+        <p style="text-align: center">This is the third page.</p>
       </ons-page>
     </template>
 
     <template id="tab4.html">
       <ons-page id="Tab4">
-        <p style="text-align: center;">
-          This is the four page.
-        </p>
+        <p style="text-align: center">This is the four page.</p>
       </ons-page>
     </template>
-
   </body>
 </html>
