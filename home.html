@@ -53,22 +53,55 @@
 
     <template id="tab1.html">
       <ons-page id="Tab1">
-        <p style="text-align: center">
-          <img src="./img/movie1.jpg" width="300" height="400" />
-        </p>
-        <p style="text-align: left">Top 10 of August</p>
+        <ons-navigator
+          swipeable
+          id="myNavigator"
+          page="page1.html"
+        ></ons-navigator>
+
+        <ons-page>
+          <ons-carousel
+            fullscreen
+            swipeable
+            auto-scroll
+            overscrollable
+            id="carousel"
+            style="height: 90%"
+          >
+            <ons-carousel-item style="background-color: #085078">
+              <ons-col width="200px">
+                <img src="./img/movie1.jpg" width="220%" />
+              </ons-col>
+            </ons-carousel-item>
+            <ons-carousel-item style="background-color: #373b44">
+              <ons-col width="200px">
+                <img src="./img/movie2.jpg" width="220%" />
+              </ons-col>
+            </ons-carousel-item>
+            <ons-carousel-item style="background-color: #d38312">
+              <ons-col width="200px">
+                <img src="./img/movie3.jpg" width="220%" />
+              </ons-col>
+            </ons-carousel-item>
+          </ons-carousel>
+          <p style="text-align: left">Top 10 of August</p>
+        </ons-page>
       </ons-page>
     </template>
 
     <template id="tab2.html">
       <ons-page id="Tab2">
         <ons-page>
-          <p style="text-align: center; margin-top: 10px">
-            <ons-search-input
-              placeholder="Search"
-              onchange="ons.notification.alert('Searched for: ' + this.value)"
-            ></ons-search-input>
-          </p>
+          
+            <p style="text-align: center; margin-top: 50px;">
+              <ons-search-input
+               
+               
+                placeholder="Search"
+                onchange="ons.notification.alert('Searched for: ' + this.value)"
+              ></ons-search-input>
+            </p>
+         
 
           <ons-row>
             <ons-col width="200px">
@@ -81,7 +114,7 @@
                 Disney's Aladdin story focuses on Aladdin. A hospitable street
                 thief After he had the opportunity to meet Princess Jasmine by
                 accident in the market in the middle of the city. But Aladdin's
-                every move was watched by the Sultan's minister, Jafar, and...
+                every move was watched by the Sultan's minister...
               </div>
               <div class="title-movie">Rating</div>
               <div class="icon-star">
@@ -104,8 +137,7 @@
                 The new, gorgeous Amblin Jana Home took place in the place we'd
                 expect to meet Jack Black and Kate Blanchett, the owners of 2
                 Aurors, in a house with a clock in its Wall. From Amblin
-                Entertainment Mint, this wondrous revelation tells the spine
-                tingling of a 10-year-old chair (Ohan Vaccaro), who...
+                Entertainment Mint, this wondrous...
               </div>
               <div class="title-movie">Rating</div>
               <div class="icon-star">
@@ -128,8 +160,7 @@
                 All Clara (Mackenzie Foy) needs is a key - one unique key. To
                 unlock the box containing priceless gifts From the departed
                 mother The golden thread was given to her at the Godfather's
-                annual holiday party. Drossel Meyer (Morgan Freeman) leads her...
-                
+                annual holiday party. Drossel Meyer...
               </div>
               <div class="title-movie">Rating</div>
               <div class="icon-star">
