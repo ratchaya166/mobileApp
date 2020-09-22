@@ -11,7 +11,7 @@
   }
 }
 .search-input {
-  background: #7c1a1a;
+  background: #830E2F;
 
   border: none;
   border-radius: 20px;
@@ -27,19 +27,19 @@
   display: block;
 }
 .search-input input {
-  color: #e52d27;
+  color:#830E2F;
 }
 .search-input input::-webkit-input-placeholder {
-  color: #e52d27;
+  color: #830E2F;
 }
 .search-input input:-moz-placeholder {
-  color: #e52d27;
+  color: #830E2F;
 }
 .search-input input::-moz-placeholder {
-  color: #e52d27;
+  color: #830E2F;
 }
 .search-input input:-ms-input-placeholder {
-  color: #e52d27;
+  color: #830E2F;
 }
 
 .search-input input::-webkit-search-cancel-button {
@@ -47,7 +47,7 @@
 }
 
 .search-bar {
-  background: #e52d27;
+  background:#830E2F;
   width: 100%;
   position: fixed;
   display: block;
@@ -91,7 +91,7 @@ ons-page:not([modifier~="material"]) > .search-bar ~ .content {
 .user {
   font-size: 12px;
   opacity: 0.8;
-  color: #e52d27;
+  color:#830E2F;
   margin-bottom: 6px;
   width: 100%;
 }
